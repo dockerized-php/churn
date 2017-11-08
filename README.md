@@ -13,7 +13,7 @@ The image are based on [Alpine Linux](https://alpinelinux.org/) and built daily.
 
 ### Install
 
-Install the container:
+Install the image:
 
 ```
 docker pull dockerizedphp/churn
