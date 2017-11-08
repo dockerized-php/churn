@@ -5,7 +5,7 @@ ENV COMPOSER_HOME /composer
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV PATH /composer/vendor/bin:$PATH
 
-ARG VERSION="dev-master"
+ARG VERSION="^0.4"
 
 RUN apk --update --progress --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.6/community add \
     curl \
