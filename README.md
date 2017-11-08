@@ -35,4 +35,3 @@ alias churn-php='docker run -ti -v $PWD:/app --rm dockerizedphp/churn:latest run
 ```
 
 Otherwise you can use this command directly.
-```
