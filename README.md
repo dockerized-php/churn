@@ -7,6 +7,8 @@ The image are based on [Alpine Linux](https://alpinelinux.org/) and built daily.
 ## Supported tags
 
 - `0.4` [(0.4/Dockerfile)](https://github.com/dockerized-php/churn/blob/master/0.4/Dockerfile)
+- `0.5` [(0.5/Dockerfile)](https://github.com/dockerized-php/churn/blob/master/0.5/Dockerfile)
+- `1.0` [(1.0/Dockerfile)](https://github.com/dockerized-php/churn/blob/master/1.0/Dockerfile)
 - `latest` [(latest/Dockerfile)](https://github.com/dockerized-php/churn/blob/master/latest/Dockerfile)
 
 ## How to use this image

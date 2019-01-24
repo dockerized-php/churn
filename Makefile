@@ -1,11 +1,21 @@
-all: build test
+VERSIONS := 0.4 0.5 1.0 latest
+BUILD_ALL_VERSIONS := $(addprefix build-, $(VERSIONS))
+TEST_ALL_VERSIONS := $(addprefix test-, $(VERSIONS))
 
-build:
-	@echo ">> Building image"
-	docker build -t dockerizedphp/churn:latest latest/
-	docker build -t dockerizedphp/churn:0.4 0.4/
+all: test
 
-test:
-	@echo ">> Run test"
-	docker run --rm -ti dockerizedphp/churn 2>/dev/null; true
-	docker run --rm -ti dockerizedphp/churn:0.4 2>/dev/null; true
+.PHONY: build build-base $(BUILD_ALL_VERSIONS)
+build-base:
+	docker build -t dockerizedphp/churn:base base
+
+$(BUILD_ALL_VERSIONS): build-%: build-base
+	docker build -t dockerizedphp/churn:$* $*
+
+build: $(BUILD_ALL_VERSIONS)
+
+.PHONY: test $(TEST_ALL_VERSIONS)
+$(TEST_ALL_VERSIONS): test-%:
+	@echo "Test $*"
+	@docker run --rm dockerizedphp/churn:$* help
+
+test: build $(TEST_ALL_VERSIONS)
