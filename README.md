@@ -36,7 +36,7 @@ We are recommend to use this image as an shell alias to access via short-command
 To use simply *churn-php* everywhere on CLI, add this line to your ~/.zshrc, ~/.bashrc or ~/.profile.
 
 ```
-alias churn-php='docker run -ti -v $PWD:/app --rm dockerizedphp/churn:latest run src'
+alias churn-php='docker run -ti -v $PWD:/app --rm dockerizedphp/churn:latest'
 ```
 
 Otherwise you can use this command directly.
