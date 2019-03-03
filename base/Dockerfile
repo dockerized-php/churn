@@ -19,6 +19,7 @@ RUN apk --update --progress --no-cache --repository http://dl-cdn.alpinelinux.or
     php7-zlib \
     php7-mbstring \
     php7-xml \
+    php7-tokenizer \
   && rm -rf /var/cache/apk/* /var/tmp/* /tmp/*
 
 VOLUME /app
