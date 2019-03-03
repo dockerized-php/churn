@@ -11,6 +11,7 @@ RUN apk --update --progress --no-cache --repository http://dl-cdn.alpinelinux.or
     curl \
     git \
     php7 \
+    php7-curl \
     php7-ctype \
     php7-json \
     php7-iconv \
@@ -20,6 +21,7 @@ RUN apk --update --progress --no-cache --repository http://dl-cdn.alpinelinux.or
     php7-mbstring \
     php7-xml \
     php7-tokenizer \
+  && composer global require hirak/prestissimo \
   && rm -rf /var/cache/apk/* /var/tmp/* /tmp/*
 
 VOLUME /app
