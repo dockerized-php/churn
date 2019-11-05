@@ -1,9 +1,6 @@
 # Docker image for [churn-php](https://github.com/bmitch/churn-php)
 
-[![Build Status](https://travis-ci.org/dockerized-php/churn.svg?branch=master)](https://travis-ci.org/dockerized-php/churn)
-[![Docker Build](https://img.shields.io/docker/build/dockerizedphp/churn.svg)](https://hub.docker.com/r/dockerizedphp/churn)
-[![Docker Pulls](https://img.shields.io/docker/pulls/dockerizedphp/churn.svg)](https://hub.docker.com/r/dockerizedphp/churn)
-[![](https://images.microbadger.com/badges/image/dockerizedphp/churn.svg)](https://microbadger.com/images/dockerizedphp/churn)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 The image are based on [Alpine Linux](https://alpinelinux.org/) and built daily.
 
